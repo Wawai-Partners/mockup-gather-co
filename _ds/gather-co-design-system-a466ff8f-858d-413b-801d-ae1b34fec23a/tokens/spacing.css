@@ -1,0 +1,71 @@
+/* ============================================================
+   Gather & Co — Spacing, Radii, Shadows, Borders, Motion
+   Spacing scale: 8px base (with 4px half-steps where needed).
+   Feel: airy, generous whitespace, soft rounded corners,
+   gentle warm-tinted shadows.
+   ============================================================ */
+
+:root {
+  /* ---- 8px spacing scale ---- */
+  --space-0:  0;
+  --space-1:  0.25rem;  /* 4  — half step */
+  --space-2:  0.5rem;   /* 8  — base unit */
+  --space-3:  0.75rem;  /* 12 */
+  --space-4:  1rem;     /* 16 */
+  --space-5:  1.5rem;   /* 24 */
+  --space-6:  2rem;     /* 32 */
+  --space-7:  3rem;     /* 48 */
+  --space-8:  4rem;     /* 64 */
+  --space-9:  6rem;     /* 96 */
+  --space-10: 8rem;     /* 128 */
+
+  /* ---- Section rhythm ---- */
+  --section-y: var(--space-9); /* @kind spacing */
+  --section-y-lg: var(--space-10); /* @kind spacing */
+  --content-max: 1200px; /* @kind spacing */
+  --content-narrow: 760px; /* @kind spacing */
+  --gutter: var(--space-5); /* @kind spacing */
+
+  /* ---- Border radius (soft, rounded, residential) ---- */
+  --radius-xs: 4px;
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 18px;
+  --radius-xl: 24px;
+  --radius-2xl: 32px;
+  --radius-pill: 999px;
+  --radius-card: var(--radius-lg);
+
+  /* ---- Border widths ---- */
+  --border-hair: 1px;
+  --border-thin: 1.5px;
+  --border-thick: 2px;
+
+  /* ---- Shadows (warm-tinted, gentle — built on teal-charcoal) ---- */
+  --shadow-xs: 0 1px 2px rgba(28, 42, 48, 0.06);
+  --shadow-sm: 0 2px 6px rgba(28, 42, 48, 0.07);
+  --shadow-md: 0 8px 20px -6px rgba(28, 42, 48, 0.12), 0 2px 6px rgba(28, 42, 48, 0.06);
+  --shadow-lg: 0 18px 40px -12px rgba(28, 42, 48, 0.18), 0 4px 10px rgba(28, 42, 48, 0.06);
+  --shadow-xl: 0 30px 70px -20px rgba(28, 42, 48, 0.26);
+  /* warm inner highlight for inset wells */
+  --shadow-inset: inset 0 1px 2px rgba(28, 42, 48, 0.06);
+  /* sage/brand glow for focus + premium hover */
+  --shadow-focus: 0 0 0 3px rgba(138, 174, 93, 0.35);
+  --shadow-card: var(--shadow-md);
+
+  /* ---- Motion (calm, crafted — no bounce) ---- */
+  --ease-out: cubic-bezier(0.22, 0.61, 0.36, 1); /* @kind other */
+  --ease-in-out: cubic-bezier(0.45, 0, 0.25, 1); /* @kind other */
+  --dur-fast: 140ms; /* @kind other */
+  --dur-base: 220ms; /* @kind other */
+  --dur-slow: 380ms; /* @kind other */
+  --transition-base: all var(--dur-base) var(--ease-out); /* @kind other */
+
+  /* ---- Layering ---- */
+  --z-base: 1; /* @kind other */
+  --z-raised: 10; /* @kind other */
+  --z-sticky: 100; /* @kind other */
+  --z-overlay: 1000; /* @kind other */
+  --z-modal: 1100; /* @kind other */
+  --z-toast: 1200; /* @kind other */
+}

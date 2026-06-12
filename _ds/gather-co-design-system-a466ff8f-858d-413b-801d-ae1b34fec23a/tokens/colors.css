@@ -1,0 +1,120 @@
+/* ============================================================
+   Gather & Co — Color System
+   Built around two brand anchors: deep teal-navy + sage/olive.
+   STRICT RULE: never pure black (#000). Darkest ink is a very
+   dark desaturated teal-charcoal (--ink-900 / #1C2A30).
+   ============================================================ */
+
+:root {
+  /* ---- Primary: Teal-Navy (the brand anchor) ---- */
+  --teal-900: #102E3B;
+  --teal-800: #163E50;
+  --teal-700: #1A4A63; /* PRIMARY brand color */
+  --teal-600: #1D5775;
+  --teal-500: #2A6E8E;
+  --teal-400: #4F8AA6;
+  --teal-300: #89B3C7;
+  --teal-200: #C2D8E1;
+  --teal-100: #E5EEF2;
+  --teal-50:  #F1F6F8;
+
+  /* ---- Secondary: Sage / Olive Green (the brand accent) ---- */
+  --sage-800: #5E7E37;
+  --sage-700: #6E9043;
+  --sage-600: #7C9E4F;
+  --sage-500: #8AAE5D; /* SECONDARY brand color */
+  --sage-400: #A0BE77;
+  --sage-300: #BCD19C;
+  --sage-200: #D7E3C3;
+  --sage-100: #ECF2E2;
+  --sage-50:  #F5F8EE;
+
+  /* ---- Pine / Forest (depth, deep panels) ---- */
+  --pine-900: #1E3326;
+  --pine-700: #2F4A37;
+  --pine-500: #41614C;
+
+  /* ---- Clay / Terracotta (warm tertiary accent) ---- */
+  --clay-700: #A85A3C;
+  --clay-600: #B96847;
+  --clay-500: #C97B5A; /* tertiary warm accent */
+  --clay-400: #D89A7E;
+  --clay-300: #E5BBA6;
+  --clay-200: #EFD6C8;
+  --clay-100: #F7E9E0;
+
+  /* ---- Brass / Gold (subtle premium touches) ---- */
+  --brass-700: #94793F;
+  --brass-600: #A6884C;
+  --brass-500: #B89B5E; /* muted gold/brass */
+  --brass-400: #CBB07C;
+  --brass-300: #DDC9A0;
+  --brass-100: #F1E8D2;
+
+  /* ---- Warm Neutrals: Sand / Cream / Stone / Taupe ---- */
+  --cream-50:  #FAF7F0; /* lightest warm background */
+  --sand-100:  #F5F1E8; /* primary page background */
+  --sand-200:  #ECE5D6;
+  --stone-300: #DAD1C0;
+  --stone-400: #BCB29D;
+  --taupe-500: #8B8270;
+  --taupe-600: #6B6557; /* muted body text */
+  --taupe-700: #4A4A40; /* strong body text */
+  --ink-900:   #1C2A30; /* DARKEST — teal-charcoal, never #000 */
+
+  /* Warm white surface (cards) — softer than pure #FFF */
+  --warm-white: #FEFCF8;
+  --pure-white: #FFFFFF;
+
+  /* ---- Semantic / status (warm-tuned, never neon) ---- */
+  --success: #6E9043;
+  --warning: #C99A45;
+  --danger:  #B5553C;
+  --info:    #2A6E8E;
+
+  /* ============================================================
+     SEMANTIC ALIASES — prefer these in components
+     ============================================================ */
+
+  /* Surfaces & backgrounds */
+  --color-bg:            var(--sand-100);
+  --color-bg-soft:       var(--cream-50);
+  --surface-card:        var(--warm-white);
+  --surface-raised:      var(--pure-white);
+  --surface-sunken:      var(--sand-200);
+  --surface-inverse:     var(--teal-700);
+  --surface-inverse-deep:var(--teal-900);
+
+  /* Text */
+  --text-strong:   var(--ink-900);
+  --text-body:     var(--taupe-700);
+  --text-muted:    var(--taupe-600);
+  --text-subtle:   var(--taupe-500);
+  --text-on-dark:  var(--cream-50);
+  --text-on-dark-muted: #B9C9D1;
+  --text-brand:    var(--teal-700);
+
+  /* Brand roles */
+  --brand-primary:        var(--teal-700);
+  --brand-primary-hover:  var(--teal-800);
+  --brand-primary-press:  var(--teal-900);
+  --brand-secondary:      var(--sage-500);
+  --brand-secondary-hover:var(--sage-600);
+  --brand-secondary-press:var(--sage-700);
+  --brand-tertiary:       var(--clay-500);
+  --brand-gold:           var(--brass-500);
+
+  /* Lines & dividers (warm, never gray) */
+  --border-soft:    #E6DFD0;
+  --border-default: #DAD1C0;
+  --border-strong:  #C7BCA6;
+  --border-on-dark: rgba(245, 241, 232, 0.18);
+  --divider-warm:   #E6DFD0;
+
+  /* Focus ring */
+  --focus-ring: var(--sage-500);
+
+  /* Star rating */
+  --star-filled: var(--brass-500);
+  --star-empty:  #DAD1C0;
+}
